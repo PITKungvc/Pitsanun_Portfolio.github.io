@@ -127,7 +127,7 @@ nav {
     
     /* background-size: 100% 730px; */
     background-size: cover;
-    background-image: url(https://github.com/PITKungvc/Pitsanun_Portfolio.github.io/blob/main/IMG/IMG_3037.JPG);
+    background-image: url(https://raw.githubusercontent.com/PITKungvc/Pitsanun_Portfolio.github.io/refs/heads/main/IMG/IMG_3037.JPG);
     background-repeat: no-repeat;
     
     /* animation: background1 10s ease-in-out infinite; */
@@ -412,7 +412,7 @@ footer p {
 
 @media only screen and (max-width: 700px ) {
     .BOX1 {
-        background-image: url(https://github.com/PITKungvc/Pitsanun_Portfolio.github.io/blob/main/IMG/IMG_3037.JPG);
+        background-image: url(https://raw.githubusercontent.com/PITKungvc/Pitsanun_Portfolio.github.io/refs/heads/main/IMG/IMG_3037.JPG);
         display: block;
         align-content: center;
         .Welcome {
