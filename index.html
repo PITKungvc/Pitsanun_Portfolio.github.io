@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <!-- font-family: "Space Grotesk", sans-serif; -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <!-- font-family: "Sixtyfour Convergence", sans-serif; -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
+    <!-- font-family: "Noto Sans Thai", sans-serif; -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+    <!-- font-family: "Merienda", cursive; -->
+
+</head>
+<body>
+    
+    <!-- <div class="before">
+        <p>PORFOLIO</p>
+    </div> -->
+    <nav>
+        <div class="nav-wrapper">
+            <div class="logo">
+                <a href="index.html" class="profile">My profile</a>
+            </div>
+            <!-- <div class="caption">
+                <p class="caption1">Portfolio</p>
+                <p class="caption2">By Pitsanun Bomrungchit</p>
+            </div> -->
+            <ul class="menu" id="myMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Profile.html">Profile</a></li>
+                <li><a href="Product.html">Product</a></li>
+            </ul>
+            <div class="bur-menu" onclick="toggleBur(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll",function() {
+            var nav = document.querySelector("nav");
+            nav.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+
+    <script src="scripts.js"></script>
+
+    <main>
+        <div class="BOX1">
+            <div>
+                <p class="Welcome">WELCOME</p>
+                <p class="tomywebsite">To My Portfolio Website</p>
+                <p class="info">This Website is intended to show my awards , work and activities throughout the period since I became interested in computers</p>
+                <p class="info">please enjoy viewing my website.</p>
+            </div>
+            <!-- <img src="/IMG/My pic.jpg" alt="My picture"> -->
+        </div>
+        
+        <div class="BOX2">
+            <p class="topic">คำนำ</p>
+            <p class="information">เว็บไซต์นี้เป็นส่วนนึงของผลงานของนายพิศนันท์ บำรุงจิตร์ โดยได้จัดทำเว็บไซต์นี้ขึ้น เพื่อแสดงให้เห็นถึงทักษะของภาษา HTML , CSS และ JavaScript และยังรวมถึงทักษะและรางวัลอื่น ๆ นับตั้งแต่ตัวผมได้สนใจในด้านคอมพิวเตอร์ ทั้งทักษะทางภาษาโค้ดดิ้ง ทักษะทางหุ่นยนต์ รวมถึงทักษะในการเป็นผู้นำ และจิตอาสา</p>
+            <p class="information">ขอเชิญทุกท่านรับชมผลงานของผมได้เลยครับ</p>
+        </div>
+
+        <div class="BOX3">
+            <div class="myPic">
+                <img src="/IMG/My pic.jpg" alt="My picture" width="60%">
+            </div>
+            <div class="letter">
+                <p class="topic">About me</p>
+                <div class="information">
+                    <p class="p1">สวัสดีครับ ผมนายพิศนันท์ บำรุงจิตร์ นักเรียนชั้นมัธยมศึกษาปีที่ 6 จากโรงเรียนวชิราวุธวิทยาลัยครับ ผมรู้สึกยินดีเป็นอย่างยิ่งที่จะได้นำเสนอผลงานหรือทักษะ ที่ผมได้ไปศึกษา ไปแข่งขันหรือจัดทำโครงงานขึ้นมาให้ท่านได้ชม</p>
+                    <p class="p2">ตัวผมเองรู้สึกภูมิใจกับผลงานที่ตัวเองได้ทำเพราะแต่ละงานที่ได้ทำไป ต้องเสียทั้งแรงกายและแรงใจในการทำงานให้สำเร็จ อย่างไรก็ตามผลลัพธ์ที่ได้ ทำให้ผมมีความสุข และเป็นแรงผลักดันให้ผมในอนาคตอีกด้วย</p>
+                    <p class="p3">สุดท้ายนี้ผมเชื่อว่าหากเรามีความพยายามและความตั้งใจที่มากพอ ถึงแม้ว่าเราจะไม่ได้สำเร็จเสมอไป แต่จะเพิ่มโอกาสในการสำเร็จมากยิ่งขึ้น ดั่งสุภาษิตที่ว่า</p>
+                    <p class="p4">"ความพยายามอยู่ที่ไหน โอกาสในความสำเร็จย่อมอยู่ที่นั้น"</p> ครับ
+                    <!-- <p>ครับ</p> -->
+                </div>
+            </div> 
+        </div>
+        <div class="BOX4">
+            <!-- <div class="pic"> -->
+                <img class="img1" src="/IMG/YIP/iMAKE_370.jpeg" alt="">
+                <img class="img2" src="/IMG/WRO/WROaward.JPG" alt="" width="95%">
+                <img class="img3" src="/IMG/ROS/1711886968565.jpg" alt="" width="95%">
+                <img class="img4" src="/IMG/Pandas/IMG20241008124338.jpg" alt="" width="95%">
+                <img class="img5" src="/IMG/Leadership Volunteer/Leadership/1727799233790.jpg" alt="" width="95%">
+                <img class="img6" src="/IMG/Leadership Volunteer/Volunteer/2 ค่าย ป.4/kankawin_049.JPG" alt="" width="95%">
+            <!-- </div> -->
+        </div>
+    </main>
+    
+    <footer>
+        <div>
+            <p>ขอขอบคุณทุกท่านที่เข้ามารับชมครับ</p>
+        </div>
+    </footer>
+</body>
+</html>

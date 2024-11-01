@@ -1,0 +1,1367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    padding: 30px 40px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.sticky {
+    height: auto;
+    background: white;
+    padding: 0px 40px;
+}
+
+.sticky .menu li a , 
+.sticky .nav-wrapper .logo a ,
+.sticky .caption1 , 
+.sticky .caption2 
+{
+    color: rgb(75, 30, 1);
+}
+
+.sticky .menu ,
+.sticky .caption ,
+.sticky .nav-wrapper .logo a,
+.sticky .bur-menu
+{
+    opacity: 100%;
+}
+
+
+
+.caption {
+    text-align: center;
+    padding-left: 12%;
+    opacity: 0;
+    user-select: none;
+
+    .caption1 {
+        font-size: 30px;
+    }
+
+    .caption2 {
+        font-size: 15px;
+    }
+}
+
+.caption p {
+    font-family: "Space Grotesk", sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0px ;
+    position: relative;
+    height: 70px;
+}
+
+.nav-wrapper .logo a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 30px;
+    padding-left: 10px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: bold;
+    opacity: 0;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    opacity: 0;
+    
+}
+
+.menu li {
+    margin-left: 25px;
+}
+
+.menu li a {
+    position: relative;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: "Space Grotesk", sans-serif;
+    padding: 0 10px;
+}
+
+.menu li a:after{
+    content: "";
+    position: absolute;
+    background-color: rgb(75, 30, 1);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.menu li a:hover:after {
+    width: 100%;
+}
+
+.BOX1 {
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    text-align: center;
+    background-color: white;
+    height: 730px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    user-select: none;
+}
+
+.BOX1 .topic {
+    align-content: end;
+    font-size: 120px;
+    font-weight: bold;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.BOX1 .information {
+    font-size: 60px;
+    font-family: "Noto Sans Thai", sans-serif;
+}
+
+.BOX2-WRO {
+    display: grid;
+    grid-template-rows: 30% 70%;
+    text-align: center;
+    background-color: rgb(106, 67, 0);
+    background-size: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.BOX2-WRO .topic {
+    align-content: center;
+    text-align: center;
+    align-self: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.BOX2-WRO .topic .WRO {
+    font-size: 500%;
+    color: rgb(255, 247, 154);
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: bold;
+}
+
+.BOX2-WRO .topic .award {
+    font-size: 250%;
+    color: rgb(255, 239, 62);
+    font-family: "Noto Sans Thai", sans-serif;
+}
+
+.BOX2-WRO .topic .date {
+    font-size: 140%;
+    color: rgb(197, 181, 7);
+    font-family: "Noto Sans Thai", sans-serif;
+}
+
+.BOX2-WRO .info {
+
+    .img {
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        width: 1200px;
+        text-align: justify;
+
+        img {
+            height: 210px;
+            background-size: cover;
+        }
+
+        .img1 {
+            align-content: end;
+        }
+    }
+    
+    .letter {
+        text-align: left;
+        align-content: center;
+        color: white;
+        font-family: "Noto Sans Thai", sans-serif;
+        font-size: 120%;
+        margin: 0 25px;
+        .p1 {
+            padding-bottom: 40px;
+        }
+
+        span {
+            color: rgb(255, 233, 182);
+            font-weight: bold;
+        }
+    }
+}
+
+.BOX3-pandas {
+    display: grid;
+    grid-template-rows: 30% 70%;
+    text-align: center;
+    background-color: rgb(219, 178, 255);
+    height: 100%;
+
+    .topic {
+        align-self: center;
+
+        .pandas {
+            color: rgb(143, 71, 237);
+            font-size:65px;
+            font-family: "Space Grotesk", sans-serif;
+            font-weight: bold; 
+        }
+
+        .DA {
+            color: rgb(143, 71, 237);
+            font-size:45px;
+            font-family: "Space Grotesk", sans-serif;
+        }
+
+        .date {
+            color: rgb(98, 42, 172);
+            font-size:25px;
+            font-family: "Noto Sans Thai", sans-serif;
+        }
+    }
+
+    .information {
+        display: grid;
+        grid-template-rows: auto;
+
+        img {
+            height: 230px;
+            overflow: hidden;
+        }
+
+        .in1 {
+            /* display: grid;
+            grid-template-columns: 40% 60%; */
+            align-self: center;
+
+            .in1img {
+                display: flex;
+                overflow: hidden;
+                /* width: 100%; */
+                text-align: center;
+
+                .img1 {
+                    object-fit: cover;
+                    overflow: hidden;
+                    width: 300px;
+                }
+            }
+
+            .in1letter {
+                text-align: left;
+                align-self: center;
+                margin: 0px 40px;
+                font-family: "Noto Sans Thai", sans-serif;
+                font-size: 20px;
+
+                .p1 {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .in2 {
+            /* display: grid;
+            grid-template-columns: 40% 60%; */
+            align-self: center;
+            /* margin-bottom: 30px; */
+
+            .in2letter {
+                text-align: left;
+                margin: 0px 40px;
+                font-family: "Noto Sans Thai", sans-serif;
+                font-size: 20px;
+                align-self: center;
+            } 
+            
+            .in2img {
+                display: grid;
+                grid-template-columns: 40% 60%;
+                overflow: hidden;
+                align-items: center;
+                
+                .box1 {
+
+                    img {
+                        width: 100%;
+                        height: 90%;
+                        object-fit: cover;
+                    }
+
+                }
+
+                .qrbox {
+                    display: flex;
+                    align-items: center;
+                    
+                    .letter {
+                        margin: 0px 20px;
+                        font-size: 30px;
+                        font-weight: bold;
+                        font-family: "Noto Sans Thai", sans-serif;
+                    }
+
+                    .qr {
+                        width: 50%;
+                        height: 60%;
+                        margin-right: 40px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.BOX4-YIP {
+    display: grid;
+    grid-template-rows: 35% 65%;
+    text-align: center;
+    background-color: rgb(89, 103, 67);
+    height: 1050px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .topic {
+        align-self: center;
+
+        .YIP {
+            color: rgb(156, 255, 156);
+            font-size: 80px;
+            font-family: "Space Grotesk", sans-serif;
+            font-weight: bold;
+        }
+
+        .BM {
+            color:rgb(102, 198, 102);
+            font-size: 35px;
+
+            .ENG {
+                font-family: "Space Grotesk", sans-serif;
+            }
+
+            .TH {
+                font-family: "Noto Sans Thai", sans-serif;
+            }
+        }
+
+        .date {
+            font-family: "Noto Sans Thai", sans-serif;
+            color:rgb(73, 167, 73);
+            font-size: 20px;
+        }
+    }
+
+    .information {
+        display: grid;
+        grid-template-rows: 50% 50%;
+        height: 100%;
+
+        .img {
+            display: flex;
+            overflow: hidden;
+            background-size: cover;
+            height: 250px;
+            align-self: center;
+
+            img {
+                object-fit: cover;
+                text-align: center;
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .letter {
+
+            .p1 {
+                /* text-align: left;
+                align-self: center;
+                margin: 24px;
+                color: white;
+                font-size: 22px;
+                font-family: "Noto Sans Thai", sans-serif; */
+
+            }
+
+            .qr {
+                text-align: center;
+                align-self: center;
+
+                img {
+                    height: 150px;
+                }
+            }
+        }
+    }
+}
+
+.BOX5-ROS {
+    display: grid;
+    grid-template-rows: 30% 70%;
+    text-align: center;
+    background-color: rgb(193, 214, 207);
+    max-width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .topic {
+        align-self: center;
+    
+        .ROS {
+            color: rgb(0, 100, 68);
+            font-size:55px;
+            font-family: "Space Grotesk", sans-serif;
+            font-weight: bold; 
+        }
+
+        .date {
+            color: rgb(30, 129, 97);
+            font-size:25px;
+            font-family: "Noto Sans Thai", sans-serif;
+        }
+    }
+
+    .information {
+        /* display: grid;
+        grid-template-columns: 50% 50%; */
+        padding-bottom: 30px;
+        
+
+        .img {
+            display: grid;
+            grid-template-rows: repeat(2,1fr);
+            text-align: right;
+            overflow: hidden;
+
+            img {
+                height: 190px;
+            }
+
+            .img1 {
+                align-content: end;
+                display: flex;
+                text-align: right;
+            }
+
+            .img2 {
+                display: flex;
+                background-size: cover;
+                text-align: right;
+            }
+        }
+
+        .letter {
+            text-align: left;
+            align-self: center;
+            color: rgb(73, 73, 73);
+            font-size: 25px;
+            margin: 20px;
+            font-family: "Noto Sans Thai", sans-serif;
+        }
+    }
+}
+
+.BOX6-Arduinoday {
+    display: grid;
+    grid-template-rows: 30% 70%;
+    text-align: center;
+    background-color: rgb(191, 203, 218);
+    max-width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .topic {
+        align-self: center;
+        font-size: 60px;
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: bold;
+        color: rgb(68, 129, 203);
+
+        .p2 {
+            font-size: 30px;
+
+            .TH {
+                font-family: "Noto Sans Thai", sans-serif;
+            }
+        }
+
+        .date {
+            font-family: "Noto Sans Thai", sans-serif;
+            color: rgb(37, 90, 154);
+            font-size: 20px;
+        }
+    }
+
+    .information {
+        display: grid;
+        grid-template-rows: 50% 50%;
+
+        .letter {
+            text-align: center;
+            font-size: 25px;
+            margin: 20px 50px;
+            color: rgb(94, 145, 207);
+            font-family: "Noto Sans Thai", sans-serif;
+            align-self: center;
+        }
+
+        .img {
+            display: flex;
+            display: inline-block;
+            align-self: center;
+            text-align: center;
+            width: 100%;
+            overflow: hidden;
+            background-size: cover;
+            height: 100%;
+            padding-bottom: 40px;
+
+            img {
+                height: 190px;
+            }
+        }
+    }
+}
+
+.BOX7-Leader-Volunteer {
+    display: grid;
+    grid-template-rows: 15% 85%;
+    text-align: center;
+    background-color: rgb(87, 67, 0);
+    max-width: 100%;
+    height: 1300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .topic {
+        align-content: center;
+        color: rgb(255, 255, 0);
+        background-color: rgb(98, 80, 22);
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 80px;
+        font-weight: bold;
+    }
+
+    .information {
+        display: grid;
+        grid-template-rows: 50% 25% 25%;
+
+        .L1 {
+            /* display: grid;
+            grid-template-columns: 40% 60%; */
+            
+
+            img {
+                height: 450px;
+            }
+
+            .L1img {
+                display: flex;
+                /* display: inline-block; */
+                overflow: hidden;
+                align-self: center;
+                /* text-align: right; */
+            }
+
+            .L1letter {
+                text-align: left;
+                height: 85%;
+                padding: 20px 20px;
+                font-size: 18px;
+                font-family: "Noto Sans Thai", sans-serif;
+                align-self: center;
+                background-color: rgb(199, 182, 0);
+                width: 100%;
+
+                .p1 , .p2 {
+                    padding-bottom: 20px;
+                }
+            }
+        }
+
+        .V1 {
+            display: grid;
+            grid-template-columns: 40% 60%;
+            margin-bottom: 50px;
+
+            img {
+                height: 225px;
+            }
+
+            .V1letter {
+                align-self: center;
+                text-align: left;
+                padding: 47px 40px;
+                font-size: 22px;
+                font-family: "Noto Sans Thai", sans-serif;
+                align-self: center;
+                background-color: rgb(199, 182, 0);
+            }
+
+            .V1img {
+                display: flex;
+                overflow: hidden;
+                align-self: center;
+            }
+        }
+
+        .V2 {
+            display: grid;
+            grid-template-columns: 60% 40%;
+
+            img {
+                height: 225px;
+            }
+
+            .V2img {
+                display: flex;
+                overflow: hidden;
+                align-self: center;
+                text-align: right;
+
+                .img1 {
+                    width: 266px;
+                    
+                }
+            }
+
+            .V2letter {
+                align-self: center;
+                text-align: left;
+                padding: 47px 40px;
+                font-size: 22px;
+                font-family: "Noto Sans Thai", sans-serif;
+                align-self: center;
+                background-color: rgb(199, 182, 0);
+            }
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    align-items: center;
+    padding: 2rem;
+    height: 100px;
+    width: 100%;
+}
+
+footer p {
+    margin: 0 auto;
+    user-select: none;
+    font-family: "Noto Sans Thai", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.bur-menu {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    opacity: 0;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(75, 30, 1);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {opacity: 0;}
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+  
+
+@media only screen and (min-width: 850px) {
+    .bur-menu {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 850px ) {
+    .menu {
+        display: none;
+    }
+
+    .menu-active {
+        display: block;
+    }
+
+    .nav-wrapper {
+        padding: 1rem 0;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-wrapper .logo a {
+        font-size: 30px;
+        padding-left: 0px;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .menu li {
+        margin: 1rem 0;
+        padding: 1rem 0.5rem;
+        transition: 0.3s;
+    }
+
+    .menu li:hover {
+        background-color: rgb(198, 198, 198);
+    }
+
+    /* .menu li a {
+        padding-right: 600px;
+        
+    } */
+
+    .BOX7-Leader-Volunteer {
+        .topic {
+            font-size: 50px;
+        }
+    }
+}
+
+@media only screen and (min-width: 800px ) {
+    .BOX2-WRO {
+        .info {
+            display: grid;
+            grid-template-columns: 40% 60%;
+            overflow: hidden;
+            padding-bottom: 30px;
+            padding-top: 30px;
+        }
+    }   
+
+    .BOX4-YIP {
+        display: grid;
+        grid-template-rows: 30% 70%;
+        height: 1000px;
+        .information {
+            .letter {
+                display: grid;
+                grid-template-columns: 80% 20%;
+                padding-bottom: 100px;
+
+                .p1 {
+                    text-align: left;
+                    align-self: center;
+                    margin: 24px;
+                    color: white;
+                    font-size: 22px;
+                    font-family: "Noto Sans Thai", sans-serif;
+    
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 800px ) {
+
+    .BOX2-WRO {
+        display: grid;
+        grid-template-rows: 35% 65%;
+        text-align: center;
+        background-color: rgb(106, 67, 0);
+        background-size: 100%;
+        height: 1000px;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .topic {
+            .WRO {
+                font-size: 50px;
+            }
+            .date {
+                font-size: 16px;
+            }
+        }
+
+        .info {
+            display: grid;
+            text-align: center;
+            grid-template-rows: 50% 50%;
+            overflow: hidden;
+            padding-bottom: 30px;
+            padding-top: 30px;
+            .img {
+                padding-top: 30px;
+                display: grid;
+                grid-template-rows: repeat(2,1fr);
+                /* height: 300px; */
+                width: 100%;
+                overflow: hidden;
+                text-align: center;
+                
+                img {
+                    height: 110px;
+                }
+            }
+
+            .letter {
+                text-align: center;
+                align-items: center;
+                overflow: hidden;
+                align-self: center;
+                color: white;
+                font-family: "Noto Sans Thai", sans-serif;
+                font-size: 20px;
+                margin: 0 25px;
+                /* height: 50px; */
+                max-width: 700px;
+            }
+        }
+    }
+
+    .BOX4-YIP {
+        display: grid;
+        grid-template-rows: 25% 75%;
+        height: 700px;
+        .topic {
+            .YIP {
+                font-size: 60px;
+            }
+    
+            .BM {
+                font-size: 25px;
+            }
+    
+            .date {
+                font-size: 15px;
+            }
+        }
+
+        .information {
+            display: grid;
+            grid-template-rows: 35% 65%;
+            /* height: 100%; */
+            .img {
+                height: 150px;
+            }
+
+            .letter {
+                display: grid;
+                grid-template-rows: 60% 40%;
+                padding-bottom: 10px;
+
+                .p1 {
+                    text-align: left;
+                    align-self: center;
+                    margin: 0px 24px;
+                    color: white;
+                    font-size: 15px;
+                    font-family: "Noto Sans Thai", sans-serif;
+    
+                }
+                .qr {
+                    /* text-align: center; */
+                    align-self: flex-end;
+    
+                    img {
+                        height: 130px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px ) {
+    .BOX3-pandas {
+        .information {
+            .in1 {
+                display: grid;
+                grid-template-columns: 40% 60%;
+            }
+            .in2 {
+                display: grid;
+                grid-template-columns: 40% 60%;
+                align-self: center;
+                padding-bottom: 30px;
+    
+                .in2letter {
+                    text-align: left;
+                    margin: 0px 40px;
+                    font-family: "Noto Sans Thai", sans-serif;
+                    font-size: 20px;
+                    align-self: center;
+                } 
+                
+                .in2img {
+                    display: grid;
+                    grid-template-columns: 40% 60%;
+                    overflow: hidden;
+                    align-items: center;
+                    
+                    .box1 {
+    
+                        img {
+                            width: 100%;
+                            height: 90%;
+                            object-fit: cover;
+                        }
+    
+                    }
+    
+                }
+            }
+        }
+    }
+
+    .BOX5-ROS {
+        .information {
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px ) {
+    .BOX3-pandas {
+        height: 1200px;
+        grid-template-rows: 25% 75%;
+        .information {
+            .in1 {
+                display: grid;
+                grid-template-rows: 50% 50%; 
+                height: 500px;
+                
+                
+                .in1img {
+                    /* width: 100%; */
+                    text-align: center;
+                    max-width: 1000px;
+                    height: 100%;
+
+                    img {
+                        width: 500px;
+                    }
+                }
+            }
+            .in2 {
+                display: grid;
+                grid-template-rows: 40% 60%;
+                align-self: flex-start;
+                height: 350px;
+                /* margin-bottom: 20px; */
+    
+                .in2letter {
+                    text-align: left;
+                    margin: 0px 40px;
+                    font-family: "Noto Sans Thai", sans-serif;
+                    font-size: 20px;
+                    align-self: center;
+                } 
+                
+                .in2img {
+                    display: grid;
+                    grid-template-columns: 40% 60%;
+                    overflow: hidden;
+                    align-items: center;
+                    margin: 0px 40px;
+                    
+                    .box1 {
+    
+                        img {
+                            width: 100%;
+                            height: 90%;
+                            object-fit: cover;
+                        }
+    
+                    }
+    
+                    .qrbox {
+                        display: flex;
+                        align-items: center;
+                        
+                        .letter {
+                            margin: 0px 20px;
+                            font-size: 20px;
+                            font-weight: bold;
+                            font-family: "Noto Sans Thai", sans-serif;
+                        }
+    
+                        .qr {
+                            width: 30%;
+                            height: 100%;
+                            margin-right: 0px;
+                        }
+                    }
+    
+                }
+            }
+        }
+    }
+
+    .BOX5-ROS {
+        .information {
+            display: grid;
+            grid-template-rows: 40% 60%;
+
+            .img {
+                display: flex;
+            }
+
+            .letter {
+                margin: 20px 40px;
+            }
+        }
+    }
+
+    .BOX6-Arduinoday {
+        height: 1300px;
+        display: grid;
+        grid-template-rows: 25% 75%;
+        .information {
+            display: grid;
+            grid-template-rows: 40% 60%;
+
+            .img {
+                align-content: center;
+            }
+
+            .letter {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .BOX7-Leader-Volunteer {
+        height: 1800px;
+        .information {
+            
+            .L1 {
+                .L1letter {
+                    font-size: 15px;
+                    align-content: center;
+                }
+            }
+
+            .V1 {
+                .V1letter {
+                    font-size: 18px;
+                    padding: 30px 20px;
+                }
+            }
+
+            .V2 {
+                .V2letter{
+                    font-size: 18px;
+                    padding: 30px 20px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 750px ) {
+    .BOX7-Leader-Volunteer {
+        .information {
+            .L1 {
+                display: grid;
+                grid-template-columns: 40% 60%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 750px ) {
+    .BOX2-WRO {
+        height: 800px;
+        .info {
+            .letter {
+                font-size: 15px;
+                width: 500px;
+            }
+        }
+    }
+
+    .BOX7-Leader-Volunteer {
+        .information {
+            .L1 {
+                display: grid;
+                grid-template-rows: 40% 60%;
+                height: 750px;
+
+                img {
+                    height: 300px;
+                }
+
+                .L1img {
+                    display: block;
+                    text-align: center;
+                    align-self: flex-start;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px ) {
+    .BOX1 {
+        .topic {
+            font-size: 65px;
+        }
+
+        .information {
+            font-size: 30px;
+        }
+    }
+
+    .BOX2-WRO {
+
+        .topic {
+            .award {
+                font-size: 25px;
+            }
+            .date {
+                font-size: 12px;
+            }
+        }
+
+        .info {
+            .letter {
+                max-width: 410px;
+            }
+        }
+    }  
+    
+    .BOX3-pandas {
+        height: 1100px;
+        .information {
+            .in1 {
+                height: 500px;
+                .in1letter {
+                    font-size: 15px;
+                }
+            }
+
+            .in2 {
+                .in2letter {
+                    font-size: 15px;
+                }
+
+                .in2img {
+                    .qrbox {
+                        .letter {
+                            display: none;
+                        }
+
+                        .qr {
+                            width: 100px;
+                            margin-left: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .BOX4-YIP {
+        display: grid;
+        grid-template-rows: 25% 75%;
+        height: 700px;
+        .topic {
+            .YIP {
+                font-size: 40px;
+            }
+    
+            .BM {
+                font-size: 25px;
+            }
+    
+            .date {
+                font-size: 15px;
+            }
+        }
+
+        .information {
+            display: grid;
+            grid-template-rows: 35% 65%;
+            /* height: 100%; */
+            .img {
+                height: 150px;
+            }
+
+            .letter {
+
+                .p1 {
+                    text-align: left;
+                    align-self: center;
+                    margin: 0px 24px;
+                    color: white;
+                    font-size: 12px;
+                    font-family: "Noto Sans Thai", sans-serif;
+    
+                }
+            }
+        }
+    }
+
+    .BOX5-ROS {
+        height: 800px;
+
+        .topic {
+            .ROS {
+                font-size:35px;
+            }
+    
+            .date {
+                font-size:20px;
+            }
+        }
+
+        .information {
+            .img {
+                img {
+                    width: 200px;
+                    height: 150px;
+                }
+            }
+
+            .letter {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .BOX6-Arduinoday {
+        height: 1500px;
+        display: grid;
+        grid-template-rows: 25% 75%;
+        .topic {
+            .p1 {
+                font-size: 50px;
+            }
+            .p2 {
+                font-size: 20px;
+            }
+
+            .date {
+                font-size: 15px;
+            }
+        }
+
+        .information {
+            display: grid;
+            grid-template-rows: 40% 60%;
+
+            .img {
+                align-content: center;
+
+                img {
+                    height: 150px;
+                }
+            }
+
+            .letter {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .BOX7-Leader-Volunteer {
+        .information {
+            
+            .L1 {
+                .L1letter {
+                    font-size: 13px;
+                }
+            }
+
+            .V1 {
+                .V1letter {
+                    font-size: 15px;
+                    padding: 30px 20px;
+                }
+            }
+
+            .V2 {
+                .V2letter{
+                    font-size: 15px;
+                    padding: 30px 20px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 450px ) {
+    .BOX2-WRO {
+
+        .info {
+            .letter {
+                max-width: 330px;
+                font-size: 14px;
+            }
+        }
+    }    
+
+    .BOX5-ROS {
+        .information {
+            .letter {
+                font-size: 17px;
+            }
+        }
+    }
+
+    .BOX7-Leader-Volunteer {
+        height: 1800px;
+        .information {
+            .L1 {
+                display: grid;
+                grid-template-rows: 30% 70%;
+                height: 800px;
+
+                img {
+                    height: 250px;
+                }
+            }
+        }
+    }
+}

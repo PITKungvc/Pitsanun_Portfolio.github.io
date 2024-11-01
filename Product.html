@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="Product.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <!-- font-family: "Space Grotesk", sans-serif; -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <!-- font-family: "Sixtyfour Convergence", sans-serif; -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
+    <!-- font-family: "Noto Sans Thai", sans-serif; -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+    <!-- font-family: "Merienda", cursive; -->
+
+</head>
+<body>
+    
+    <nav>
+        <div class="nav-wrapper">
+            <div class="logo">
+                <a href="index.html" class="profile">My profile</a>
+            </div>
+            <!-- <div class="caption">
+                <p class="caption1">Portfolio</p>
+                <p class="caption2">By Pitsanun Bomrungchit</p>
+            </div> -->
+            <ul class="menu" id="myMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Profile.html">Profile</a></li>
+                <li><a href="Product.html">Product</a></li>
+            </ul>
+            <div class="bur-menu" onclick="toggleBur(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    </nav>
+    
+    <script type="text/javascript">
+        window.addEventListener("scroll",function() {
+            var nav = document.querySelector("nav");
+            nav.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+    <script src="scripts.js"></script>
+
+    <main>
+
+        <div class="BOX1">
+            <div class="topic">
+                My Products
+            </div>
+            <div class="information">
+                ผลงานที่ภาคภูมิใจ
+            </div>
+        </div>
+
+        <div class="BOX2-WRO">
+            <div class="topic">
+                <p class="WRO">World Robot Olympiad 2024</p>
+                <p class="award">รางวัลรองชนะเลิศอันดับ 2</p>
+                <p class="date">แข่งขันในวันที่ 13-15 กันยายน พ.ศ. 2567 ณ เอ็มซีซี ฮอลล์ ชั้น 3 เดอะมอลล์โคราชโดยบริษัท Gammaco ร่วมกับหน่วยงานอื่น ๆ</p>
+            </div>
+            <div class="info">
+                <div class="letter">
+                    <p class="p1">เข้าร่วมการแข่งขัน World Robot Olympiad (WRO) 2024 ในรายการ Robomission รุ่น senior ลักษณะการแข่งขันเป็นการต่อหุ่นยนต์เพื่อทำตามเป้าหมายหรือภารกิจที่ถูกจัดไว้ ซึ่งมีการใช้ทักษะ
+                        ในหลาย ๆ ด้าน เช่น การเขียนโค้ด การต่อหุ่นยนต์โดยใช้ความรู้เรื่องอุปกรณ์ต่าง ๆ เป็นต้น</p>
+                    <p class="p2">สิ่งที่ได้รับจากการแข่งขัน <span>ได้รับสิทธิ์ในการแข่งขันรายการดังกล่าวต่อในระดับนานาชาติ</span> ในวันที่ 28-30 พฤศจิกายน พ.ศ. 2567 ในการแข่งขันครั้งนี้ ตัวผมได้รับความรู้และแนวคิดเชิงกระบวนการใหม่ ๆ มากมาย ทั้งจากทีมตัวเองและทีมคู่แข่ง ซึ่งสามารถนำความรู้นี้ไปต่อยอดในอนาคตได้ ทั้งยังได้ฝึกการทำงานร่วมกันเป็นทีมกับเพื่อน ๆ อีกด้วยครับ</p>
+                </div>
+                <div class="img">
+                    <div class="img1">
+                        <img src="/IMG/WRO/Competition 1.jpg" alt="">
+                        <img src="/IMG/WRO/WROaward.JPG" alt="">
+                        <img src="/IMG/WRO/WROEARTHALLIES.png" alt="">
+                        <img src="/IMG/WRO/mix pic.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="/IMG/WRO/wro senior game mat.jpg" alt="">
+                        <img src="/IMG/WRO/Competition 2.jpg" alt="">
+                        <img src="/IMG/WRO/WRO white shirt.jpg" alt="">
+                        <img src="/IMG/WRO/Competition 3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="BOX3-pandas">
+            <div class="topic">
+                <p class="pandas">Pandas Project</p>
+                <p class="DA">Data analytics</p>
+                <p class="date">28 สิงหาคม–22 กันยายน พ.ศ. 2566</p>
+            </div>
+            <div class="information">
+                <div class="in1">
+                    <div class="in1img">
+                        <img class="img1" src="/IMG/Pandas/IMG20241008124338.jpg" alt="">
+                        <img src="/IMG/Pandas/IMG_2982.jpg" alt="">
+                    </div>
+                    <div class="in1letter">
+                        <p class="p1">โพรเจกต์ที่ผมทำ เป็นโพรเจกต์เกี่ยวกับฐานเงินเดือน และจำนวนประชากรที่ทำงานในสายอาชีพของ Data science ในต่างประเทศ ซึ่งได้ชุดข้อมูลมาจาก kaggle (สามารถตรวจสอบได้ใน Qr code)</p>
+                        <p>สิ่งที่ผมได้ทำคือการจัดเรียงข้อมูลที่มาจากชุดข้อมูลนี้ และนำมาทำการแสดงผลในรูปแบบของกราฟต่าง ๆ ซึ่งต้องวิเคราะห์ว่าข้อมูลแบบไหนเหมาะกับกราฟประเภทอะไร เช่น ถ้าข้อมูลมีเยอะ ไม่ควรนำมาทำกราฟวงกลม ให้ลองหากราฟรูปแบบอื่น</p>
+                    </div>
+                </div>
+                <div class="in2">
+                    <div class="in2letter">
+                        <p>สิ่งที่ได้รับจากโพรเจกต์ ผมได้เรียนรู้กระบวนการเกี่ยวกับการทำ Data analytics เบื้องต้น การใช้ library pandas ได้เสริมแนวคิดและกระบวนการการเขียนโค้ด ได้ฝึกการตรวจสอบข้อมูลที่ได้จากชุดข้อมูลว่าน่าเชื่อถือหรือไม่ และได้ฝึกวินัยในการทำโพรเจกต์ เพราะเป็นโปรเจกต์ที่มีความจำกัดเรื่องเวลา</p>
+                    </div>
+                    <div class="in2img">
+                        <div class="box1">
+                            <img src="/IMG/Pandas/IMG_2984.jpg" alt="">
+                        </div>
+                        <div class="qrbox">
+                            <p class="letter">ตรวจสอบเอกสารต่าง ๆได้ที่ Qr code นี้</p>
+                            <img class="qr" src="/IMG/Pandas/Pandas project.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="BOX4-YIP">
+            <div class="topic">
+                <p class="YIP">Youth Innovation Project</p>
+                <p class="BM"><span class="ENG">Bronze medal</span> <span class="TH">(เหรียญทองแดง)</span></p>
+                <p class="date">31 กรกฏาคม พ.ศ.2567</p>
+            </div>
+            <div class="information">
+                <div class="img">
+                    <img src="/IMG/YIP/1722423342918.jpg" alt="">
+                    <img src="/IMG//YIP/iMAKE_220.jpeg" alt="">
+                    <img src="/IMG//YIP/iMAKE_225.jpeg" alt="">
+                    <img src="/IMG//YIP/iMAKE_370.jpeg" alt="">
+                    <img src="/IMG//YIP/iMAKE_394.jpeg" alt="">
+                </div>
+                <div class="letter">
+                    <div class="p1">
+                        ผมได้รับรางวัลเหรียญทองแดงระดับประเทศจากการแข่งขันโครงการนวัตกรรมเยาวชน จัดโดยสมาคมวิชาการทางวิศวกรรมไฟฟ้าแห่งประเทศไทย (EEAAT) และบริษัท iMAKE Innovation ทีมของผมพัฒนา “ระบบตรวจสอบคุณภาพน้ำ” โดยวัดค่าความเป็นกรด-เบส (pH) และอุณหภูมิของน้ำในคลองบริเวณโรงเรียน โดยใช้อุปกรณ์ Arduino R4 เซ็นเซอร์วัดค่า pH และอุณหภูมิ โครงการนี้มีศักยภาพต่อยอดเป็นระบบบำบัด
+                        น้ำเสีย และสามารถติดตั้งมอเตอร์ให้เคลื่อนที่ตามผิวน้ำได้ นอกจากนี้ผมยังได้รับประสบการณ์เขียนบทความวิชาการและนำเสนอเป็นภาษาอังกฤษเป็นครั้งแรก รวมถึงเรียนรู้การใช้งาน Arduino ในโครงงาน
+                    </div>
+                    <div class="qr">
+                        <img src="/IMG//YIP/Youth Innovation Project (VC Water Monitored System).png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="BOX5-ROS">
+            <div class="topic">
+                <p class="ROS">Thailand open ROS and smart robot competition 2024</p>
+                <p class="date">30-31 มีนาคม พ.ศ.2567</p>
+            </div>
+            <div class="information">
+                <div class="img">
+                    <div class="img1">
+                        <img src="/IMG/ROS/1711886968565.jpg" alt="" >
+                        <img src="/IMG/ROS/IMG_20241024_234238.jpg" alt="">
+                    </div>
+                    <div class="img2">
+                        <img src="/IMG/ROS/Screenshot_2024-10-04-00-19-47-59_a23b203fd3aafc6dcb84e438dda678b6.jpg" alt="">
+                        <img src="/IMG/ROS/Screenshot_2024-10-04-00-17-49-55_a23b203fd3aafc6dcb84e438dda678b6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="letter">
+                    <p>ผมเข้าร่วมการแข่งขัน Thailand Open ROS and Smart Robot Competition 2024 จัดโดยสมาคมหุ่นยนต์ไทยร่วมกับ iMAKE Innovation และมหาวิทยาลัยต่าง ๆ การแข่งขันเป็นแบบเปิด โดยส่วนใหญ่ใช้อุปกรณ์ Raspberry Pi ผมลงแข่ง 2 รายการ คือ Junior Rescue และ Industrial Logistics League ซึ่งต้องใช้ความรู้เรื่อง ROS และทำงานผ่าน Linux หรือ Raspberry Pi การแข่งขันนี้ทำให้ผมได้ศึกษาและใช้งาน ROS เป็นครั้งแรก รวมถึงเข้าใจกระบวนการทำงานของ Linux และเห็นถึงการประยุกต์ใช้ในอุตสาหกรรม</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="BOX6-Arduinoday">
+            <div class="topic">
+                <p class="p1">Arduino Education Day Thailand 2023</p>
+                <p class="p2"><span class="ENG">2nd runner up</span> <span class="TH">รางวัลรองชนะเลิศอันดับ 2</span></p>
+                <p class="date">23-25 พฤษจิกายน พ.ศ.2566</p>
+            </div>
+
+            <div class="information">
+                <div class="letter">
+                    ผมได้รับรางวัลรองชนะเลิศอันดับ 2 ในการแข่งขัน Arduino Education Day Thailand 2023 จัดโดย บริษัท อิมเมจิเนียริ่ง เอ็ดดูเคชั่น จำกัด, Arduino Education , OKMD, iMAKE และมหาวิทยาลัยชั้นนำของไทย 8 แห่ง การแข่งขันเป็นการศึกษา Arduino เบื้องต้น โดยเขียนคำสั่งให้หุ่นยนต์เดินตามเส้นผ่านเซ็นเซอร์ตรวจแสง และทำภารกิจต่าง ๆ เพื่อเก็บคะแนน ผมได้ลองใช้ Arduino ในการแข่งขันเป็นครั้งแรก ทำให้เข้าใจการเขียนโค้ด Arduino ซึ่งประยุกต์มาจากภาษา C++ และช่วยให้คิดเป็นกระบวนการมากขึ้น
+                </div>
+                <div class="img">
+                    <img src="/IMG/Arduino Education/1699357456906.jpg" alt="">
+                    <img src="/IMG/Arduino Education/1699357457044.jpg" alt="">
+                    <img src="/IMG/Arduino Education/1699357457123.jpg" alt="">
+                    <img src="/IMG/Arduino Education/1699357457206.jpg" alt="">
+                    <img src="/IMG/Arduino Education/IMG20231102145628.jpg" alt="">
+                    <img src="/IMG/Arduino Education/Screenshot_2024-10-02-00-21-33-41_94c3c0214f41e8559bec03caf75c21c7.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="BOX7-Leader-Volunteer">
+            <div class="topic">
+                <p>Leadership & Volunteer</p>
+            </div>
+            <div class="information">
+                <div class="L1">
+                    <div class="L1img">
+                        <img src="/IMG/Leadership Volunteer/Leadership/1727799135028.jpg" alt="">
+                        <img src="/IMG/Leadership Volunteer/Leadership/1727799218538.jpg" alt="">
+                        <!-- <img src="/IMG/Leadership Volunteer/Leadership/1720692276600.jpg" alt=""> -->
+                    </div>
+                    <div class="L1letter">
+                        <p class="p1">โรงเรียนของผมเป็นโรงเรียนประจำ นักเรียนทุกคนตั้งแต่ ม.1 ถึง ม.6 จะมีสถานที่พักไม่เหมือนกัน โดยแบ่งออกเป็น 6 คณะ หัวหน้าคณะคือนักเรียนชั้น ม.6 ที่ได้รับเลือกให้ดูแลนักเรียนในคณะนั้น ๆ โดยทำหน้าที่จัดตารางเวลาและการดำเนินชีวิตของนักเรียนทั้งหมดในช่วงที่อยู่ในคณะ มีครูประจำคณะทำหน้าที่เป็นที่ปรึกษา แต่หากมีปัญหาเกิดขึ้น หัวหน้าคณะจะต้องร่วมมือกับครูประจำคณะในการแก้ปัญหา</p>
+                        <P class="p2">การเป็นหัวหน้าคณะก็เหมือนกับการเป็นพี่ดูแลนักเรียนคนอื่น ๆ ให้ใช้ชีวิตตามหลักคุณธรรมและจริยธรรมของสังคม และต้องเป็นแบบอย่างที่ดีให้กับนักเรียนคนอื่น ๆ ด้วยเช่นกัน การเป็นหัวหน้าคณะเปรียบเสมือนการทำสภานักเรียนของโรงเรียนทั่วไป เพราะเมื่อมีกิจกรรมของโรงเรียน ผมในฐานะ หน.นร.จะต้องทำหน้าที่เป็นผู้ช่วยหรือการเป็น staff ในบางครั้งเช่นกัน</P>
+                        <p class="p3">สิ่งที่ได้รับ ได้ทักษะการจัดการ การเป็นผู้นำ จากการดูแลนักเรียนคนอื่น ๆ คอยเป็นที่พึ่งพิงให้กับรุ่นน้อง ได้ฝึกจัดเวลาชีวิตตัวเอง ได้ความเป็นระเบียบวินัยแก่ตนเองมากขึ้น เพราะมีกิจวัตรประจำวันที่ต้องทำให้สำเร็จ รวมถึงงานที่ได้รับหมอบหมายมาในแต่ละครั้ง ทั้งต้องเตรียมตัวสอบเข้ามหาวิทยาลัย และอีกหนึ่งสิ่งที่ได้รับคือได้เป็นผู้ใหญ่มากขึ้นจากการทำกิจกรรมต่าง ๆ ของหัวหน้าคณะนักเรียน</p>
+                    </div>
+                </div>
+                <!-- <hr width="100%" size="10px" color="yellow"> -->
+                <div class="V1">
+                    <div class="V1letter">
+                        <p>ได้ทำกิจกรรมจิตอาสาเก็บขยะริมทะเล พร้อมทั้งอบรมเรื่องทัศนคติและการช่วยกันดูแลสิ่งแวดล้อม ณ โครงการพัฒนาป่าชุมชนบ้านอ่างเอ็ด และศูนย์การพัฒนาอ่าวคุ้งกระเบนตามพระราชดำริ จังหวัดจันทบุรี วันที่ 1-4 มีนาคม พ.ศ. 2567</p>
+                    </div>
+                    <div class="V1img">
+                        <img src="/IMG/Leadership Volunteer/Volunteer/1 จิตอาสาข้างนอก/1709472530938.jpg" alt="">
+                        <img src="/IMG/Leadership Volunteer/Volunteer/1 จิตอาสาข้างนอก/1727798709452.jpg" alt="">
+                        <img src="/IMG/Leadership Volunteer/Volunteer/1 จิตอาสาข้างนอก/1727798820037.jpg" alt="">
+                    </div>
+                </div>
+                <div class="V2">
+                    <div class="V2img">
+                        <img class="img1" src="/IMG/Leadership Volunteer/Volunteer/2 ค่าย ป.4/IMG20231022085609.jpg" alt="">
+                        <img src="/IMG/Leadership Volunteer/Volunteer/2 ค่าย ป.4/IMG20231022145152.jpg" alt="">
+                        <img src="/IMG/Leadership Volunteer/Volunteer/2 ค่าย ป.4/kankawin_049.JPG" alt="">
+                    </div>
+                    <div class="V2letter">
+                        <p>ได้เป็นพี่ staff กำกับดูแลนักเรียนใหม่ที่พึ่งเข้าศึกษา ทำกิจกรรม และให้ความรู้ต่าง ๆ ทางวิทยาศาสตร์ เพื่อให้รุ่นน้องได้มีประสบการณ์ภายในรั้วโรงเรียนในวันที่ 22-23 ตุลาคม พ.ศ. 2566</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div>
+            <p>ขอขอบคุณทุกท่านที่เข้ามารับชมครับ</p>
+        </div>
+    </footer>
+
+</body>
+</html>

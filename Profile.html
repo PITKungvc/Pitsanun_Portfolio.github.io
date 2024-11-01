@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="Profile.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <!-- font-family: "Space Grotesk", sans-serif; -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <!-- font-family: "Sixtyfour Convergence", sans-serif; -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
+    <!-- font-family: "Noto Sans Thai", sans-serif; -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
+    <!-- font-family: "Merienda", cursive; -->
+
+</head>
+<body>
+    
+    <nav>
+        <div class="nav-wrapper">
+            <div class="logo">
+                <a href="index.html" class="profile">My profile</a>
+            </div>
+            <!-- <div class="caption">
+                <p class="caption1">Portfolio</p>
+                <p class="caption2">By Pitsanun Bomrungchit</p>
+            </div> -->
+            <ul class="menu" id="myMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Profile.html">Profile</a></li>
+                <li><a href="Product.html">Product</a></li>
+            </ul>
+            <div class="bur-menu" onclick="toggleBur(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+    </nav>
+    
+    <script type="text/javascript">
+        window.addEventListener("scroll",function() {
+            var nav = document.querySelector("nav");
+            nav.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+
+    <script src="scripts.js"></script>
+
+    <main>
+        <div class="BOX1">
+            <div class="img">
+                <!-- <img src="/IMG/IMG_3033.JPG" alt="" width="50%"> -->
+            </div>
+            <div class="letter">
+                <div class="topic">
+                    สวัสดีครับ
+                </div>
+                <div class="information">
+                    ผม พิศนันท์ครับ
+                </div>
+            </div>
+        </div>
+        <div class="BOX2">
+            <div class="letter">
+                <div class="topic">
+                    ครอบครัว
+                </div>
+                <div class="information">
+                    <div class="p1">ครอบครัวสำหรับผมถือเป็นอีกหนึ่งกำลังใจที่สำคัญที่ทำให้ผมยังตั้งใจจนถึงทุกวันนี้</div>
+                    <div class="p2">ผมมีน้องชาย 1 คน อายุห่างกัน 8 ปี ตัวผมตอนนี้อาศัยอยู่กับพ่อแม่ที่นครนายก แต่ครอบครัวผมมีคอนโดอยู่ที่กรุงเทพเพื่อให้เดินทางสะดวก</div>
+                    <div class="p3">ครอบครัวของผมพร้อมที่จะสนับสนุนผมอย่างเต็มที่ พวกเขาได้บอกว่า "หากทำอะไรก็ให้ตั้งใจทำให้ดี" ที่พึ่งทางใจหรือคนที่เป็นไอดอลก็คือพ่อแม่ผมครับ พวกเขารักลูกมาก ๆ และอยากให้ได้ดีกันทุกคน</div>
+                    <div class="p4">ครอบครัวของผมเปรียบเสมือน <strong>ดาวในใจ</strong> ครับ</div>
+                </div>
+            </div>
+            <div class="img">
+                <img src="/IMG/IMG_3039.JPG" alt="" height="100%">
+                <img src="/IMG/IMG_3043.JPG" alt="" width="550px" height="100%">
+                <img src="/IMG/IMG_3044.JPG" alt="" height="100%">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <p>ขอขอบคุณทุกท่านที่เข้ามารับชมครับ</p>
+        </div>
+    </footer>
+
+</body>
+</html>
